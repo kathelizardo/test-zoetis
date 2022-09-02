@@ -9,12 +9,6 @@
    #smartcapture-block-6sbaum3jsw5 .sc-formfield-label > label { display: none; }
    #smartcapture-block-6sbaum3jsw5 .sc-formfield-input > label { display: flex; align-items: center; font-size: 1rem; }
    #smartcapture-block-6sbaum3jsw5 .checkbox-section > label { display: flex; align-items: center; font-size: 1rem; }
-   #smartcapture-block-6sbaum3jsw5 .checkbox-section div.checkbox {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-size: 1rem
-  }
 
    #smartcapture-block-6sbaum3jsw5 .sc-button { height: 40px; box-sizing: border-box; border: none; background: #FF6400; padding: 0.8rem; font-weight: bold; font-size: 0.9rem; color: #FFFFFF; }
    #smartcapture-block-6sbaum3jsw5 .sc-button:hover { cursor: pointer; }
@@ -28,6 +22,11 @@
    .confirmationMessage a { display: block; font-size: 16px !important; }
    .confirmationMessage a:hover { text-decoration: underline !important; }
    .confirmationMessage p { margin: 0px 0px 20px !important; }
+   .checkbox input[type=checkbox] {
+    -webkit-appearance: checkbox;
+    -webkit-border-radius: 5px;
+    -moz-appearance:    checkbox;
+       }
    </style>
    <script async="" id="smartcapture-formjs-script" src="//mc.s10.exacttarget.com/CloudPages/lib/smartcapture-formjs.js"></script><link id="datepicker-stylesheet" rel="stylesheet" href="//mc.s10.exacttarget.com/CloudPages/css/datepicker.css"><link id="smartcapture-stylesheet" rel="stylesheet" href="//mc.s10.exacttarget.com/CloudPages/css/smartcapture-form.css"><script id="jquery-script" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><script id="fuel-tracking-script" src="//mc.s10.exacttarget.com/CloudPages/utilities/t.js" async=""></script><script id="jquery-ui-script" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script><script id="fuelux-loader-script" src="//www.fuelcdn.com/fuelux/2.3/loader.min.js"></script><script id="bootstrap-datepicker-script" src="//mc.s10.exacttarget.com/CloudPages/lib/bootstrap-datepicker.js" async=""></script><script id="jquery-validator-messages" src="//mc.s10.exacttarget.com/CloudPages/lib/sc-validation-messages/en.js" async=""></script><script id="jquery-validator-script" src="//mc.s10.exacttarget.com/CloudPages/lib/jquery.validator.js" async=""></script></head>
    <body data-new-gr-c-s-check-loaded="14.1078.0" data-gr-ext-installed="">
@@ -63,7 +62,7 @@
    </div>
 
    <!-- PRIVACY NOTICE SECTION -->
-   <div class="checkbox-section">
+   <div class="checkbox-section checkbox">
     <label>
         <input type="checkbox" name="Consentimiento" data-field-type="Boolean" required="required" data-validation-message="Por favor completa este campo">
         Deseo recibir información y comunicados procedentes de Zoetis a mi dirección de e-mail sobre los productos y servicios Zoetis de Animales de Compañía y otros temas relacionados con las ciencias de la salud animal, como información científica, patologías, tratamientos y formación. *
